@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>localStorageサンプル</title>
+    <script>
+      // localStorageを利用
+      var storage = localStorage;
+      // storageにキー：foo で bar を保温
+      storage.setItem("foo", "bar");
+      // 次の書き方でも同じ
+      //storage.foo    = "bar";
+      //storage["foo"] = "bar";
+
+      // 保存したデータを参照
+      console.log(storage.getItem("foo"));
+      // 次の書き方でも同じ
+      //console.log(storage.foo);
+      //console.log(storage["foo"]);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
